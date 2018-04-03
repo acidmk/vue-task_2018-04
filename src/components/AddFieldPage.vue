@@ -3,9 +3,7 @@
     <div class="field-page__header">Commercial Property - Add Field</div>
     <div class="field-page__content">
       <FieldTypes />
-      <div class="field-page__details">
-        <FieldDetails />
-      </div>
+      <FieldDetails />
     </div>
     <div class="field-page__footer">
       <div class="field-page__btn-group">
@@ -71,11 +69,6 @@ export default {
       display: flex;
       min-width: 620px;
       @include border($border-primary);
-    }
-
-    &__details {
-      flex: 1;
-      display: flex;
     }
 
     &__footer {
