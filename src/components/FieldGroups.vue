@@ -49,12 +49,11 @@ export default {
     flex-direction: column;
     background-color: $background-light;
     border: 1px solid $border-light;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 12px;
 
     &__title {
-      font-size: $font-medium;
-      font-weight: bold;
+      @include header($font-medium, normal);
     }
 
     &__subtitle {

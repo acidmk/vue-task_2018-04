@@ -61,9 +61,7 @@ export default {
     min-width: 200px;
 
     &__title {
-      font-size: $font-big;
-      margin: $header-margin;
-      font-weight: bold;
+      @include header($font-big);
     }
   }
 </style>

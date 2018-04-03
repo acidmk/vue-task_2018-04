@@ -58,8 +58,7 @@ export default {
 <style lang="scss" scoped>
   .field-tags {
     &__name {
-      font-size: $font-medium;
-      font-weight: bold;
+      @include header($font-medium, normal)
     }
 
     &__content {

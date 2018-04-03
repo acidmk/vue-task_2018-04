@@ -50,8 +50,3 @@ $chipStyle: 2px 8px, $font-primary, $font-primary-selected, $background-light, $
     }
   }
 }
-
-@mixin header($font-size) {
-  font-size: $font-size;
-  margin: $header-margin;
-}

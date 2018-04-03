@@ -63,8 +63,7 @@ export default {
     padding: 0px 55px;
 
     &__header {
-      font-size: $font-large;
-      margin: $header-margin;
+      @include header($font-large, normal)
     }
 
     &__content {
@@ -94,10 +93,6 @@ export default {
       &:not(:last-child) {
         margin-right: 45px;
       }
-    }
-
-    &__btn-cancel {
-      margin-right: 45px;
     }
   }
 </style>

@@ -34,7 +34,7 @@ export default {
 
     &__groups-container {
       flex: 0;
-      flex-basis: 300px;
+      flex-basis: 325px;
       display: flex;
     }
 
@@ -48,9 +48,7 @@ export default {
     }
 
     &__title {
-      font-size: $font-big;
-      margin: $header-margin;
-      font-weight: bold;
+       @include header($font-big, bold);
     }
   }
 </style>
