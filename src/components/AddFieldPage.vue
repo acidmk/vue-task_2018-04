@@ -8,14 +8,14 @@
       </div>
     </div>
     <div class="field-page__footer">
-      <div class="field-page__btn-save">
+      <div class="field-page__btn-group">
         <Button
           label="Save Changes"
           color="green"
           submit="true"
         />
       </div>
-      <div class="field-page__btn-cancel">
+      <div class="field-page__btn-group field-page__btn-group--pull-right">
         <Button
           label="Cancel Changes"
           v-on:click="handleCancel"
@@ -86,9 +86,14 @@ export default {
       height: 100px;
     }
 
-    &__btn-save {
-      flex: 1;
-      margin-right: 45px;
+    &__btn-group {
+      &--pull-right {
+        margin-left: auto;
+      }
+
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
     }
 
     &__btn-cancel {

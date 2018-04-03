@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .btn {
+  %btn {
     background-color: $background;
     border: 1px solid $border-input;
     padding: 12px 20px;
@@ -31,13 +31,13 @@ export default {
     font-size: 1em;
   }
   .btn-green {
-    @extend .btn;
+    @extend %btn;
     background-color: #018aa2;
     border-color: #19899d;
     color: #fff;
   }
   .btn-red {
-    @extend .btn;
+    @extend %btn;
     background-color: #a72a2a;
     border-color: #591616;
     color: #fff;

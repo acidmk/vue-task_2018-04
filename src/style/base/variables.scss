@@ -1,5 +1,12 @@
+// Fonts
 $font-stack: 'Avenir', Helvetica, Arial, sans-serif;
+$font-size: 16px;
+$font-small: 0.85em;
+$font-medium: 1.2em;
+$font-big: 1.5em;
+$font-large: 2em;
 
+// Colors
 $primary-color: #144852;
 $font-color: #000;
 $font-primary: #405e64;
@@ -12,8 +19,5 @@ $border-primary: #a9c3c7;
 $border-light: #c1d5d7;
 $border-input: #93b2b7;
 
-$font-small: 0.85em;
-$font-medium: 1.2em;
-$font-big: 1.5em;
-$font-large: 2em;
+// Margins and paddings definitions
 $header-margin: 0.67em 0em;

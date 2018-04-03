@@ -22,7 +22,7 @@ export default {
     height: 100%;
     width: 100%;
     margin: 0px;
-    font-size: 16px;
+    font-size: $font-size;
     line-height: 24px;
     background-color: #ffffff;
     display: flex;
