@@ -52,7 +52,7 @@ export default {
     @include border($border-light);
 
     &__title {
-      @include header($font-medium, normal);
+      @include header($font-medium);
     }
 
     &__subtitle {
