@@ -12,9 +12,8 @@ $chipStyle: 2px 8px, $font-primary, $font-primary-selected, $background-light, $
     $font-sub-selected: $font-primary-selected
   ) {
   $root: &;
+  @include border($border-light, 5px);
   background-color: $background;
-  border: 1px solid $border-light;
-  border-radius: 5px;
   margin: 20px 0px;
   color: $font-color;
   padding: $padding;
