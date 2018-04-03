@@ -49,7 +49,7 @@ export default {
       alert('No way. Stay and fight!')
     },
     handleSubmit (ev) {
-
+      alert('Success!')
     }
   }
 }
