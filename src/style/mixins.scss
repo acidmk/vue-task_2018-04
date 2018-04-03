@@ -1,0 +1,57 @@
+$cardStyle: 12px, $font-color, $font-selected, $background, $background-selected;
+$chipStyle: 2px 8px, $font-primary, $font-primary-selected, $background-light, $background-selected, false;
+
+@mixin chip(
+    $padding,
+    $font-color,
+    $font-selected,
+    $background,
+    $background-selected,
+    $is-card: true,
+    $font-sub: $font-primary,
+    $font-sub-selected: $font-primary-selected
+  ) {
+  $root: &;
+  background-color: $background;
+  border: 1px solid $border-light;
+  border-radius: 5px;
+  margin: 20px 0px;
+  color: $font-color;
+  padding: $padding;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @if $is-card {
+    &__name {
+      font-size: $font-medium;
+      font-weight: bold;
+    }
+    &__subtitle {
+      font-size: $font-small;
+      color: $font-sub;
+    }
+  } @else {
+    font-weight: bold;
+  }
+
+  &--selected {
+    color: $font-selected;
+    background-color: $background-selected;
+
+    @if $is-card {
+      #{$root}__name {
+      color: $font-selected;
+      }
+      #{$root}__subtitle {
+      color: $font-sub-selected;
+      }
+    }
+  }
+}
+
+@mixin header($font-size) {
+  font-size: $font-size;
+  margin: $header-margin;
+}
