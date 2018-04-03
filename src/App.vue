@@ -14,20 +14,17 @@ export default {
 <style lang="scss" scoped>
   .app {
     font-family: $font-stack;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-size: $font-size;
+    line-height: $line-height;
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     margin: 0px;
-    font-size: $font-size;
-    line-height: 24px;
-    background-color: #ffffff;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 
     &__header {
       height: 50px;
