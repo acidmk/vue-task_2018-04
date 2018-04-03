@@ -48,9 +48,8 @@ export default {
     display: flex;
     flex-direction: column;
     background-color: $background-light;
-    border: 1px solid $border-light;
-    border-radius: 3px;
     padding: 12px;
+    @include border($border-light);
 
     &__title {
       @include header($font-medium, normal);

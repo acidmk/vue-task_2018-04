@@ -69,9 +69,8 @@ export default {
     &__content {
       flex: 1;
       display: flex;
-      border: 1px solid $border-primary;
-      border-radius: 3px;
       min-width: 620px;
+      @include border($border-primary);
     }
 
     &__details {
