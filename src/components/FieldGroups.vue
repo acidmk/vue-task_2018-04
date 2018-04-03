@@ -43,16 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  input[type=button] {
-      width: 100%;
-      background-color: $background;
-      border: 1px solid $border-input;
-      padding: 12px 20px;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-  }
-
   .field-groups {
     flex: 1;
     display: flex;
