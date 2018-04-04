@@ -1,6 +1,6 @@
 <template>
   <div class="details-form">
-    <div class="details-form__row-group">
+    <div class="details-form__input-group">
       <div class="details-form__input-holder">
         <TextInput
           title="Display Label"
@@ -20,7 +20,7 @@
         />
       </div>
     </div>
-    <div class="details-form__row-group">
+    <div class="details-form__input-group">
       <div class="details-form__input-holder">
         <TextInput
           title="Default Value"
@@ -31,7 +31,7 @@
       </div>
       <div class="details-form__input-holder" />
     </div>
-    <div class="details-form__row-group">
+    <div class="details-form__input-group">
       <div class="details-form__input-holder">
         <TextInput
           title="Custom Validation"
@@ -98,7 +98,7 @@ export default {
     display: flex;
     flex-direction: column;
 
-    &__row-group {
+    &__input-group {
       display: flex;
       flex-wrap: wrap;
     }

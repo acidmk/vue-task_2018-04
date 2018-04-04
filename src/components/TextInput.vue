@@ -9,7 +9,12 @@
         :required="required ? true : false"
         :pattern="regex ? regex : '(.*?)'"
       />
-      <div class="text-input__description">{{ description }}</div>
+      <div
+        v-if="description"
+        class="text-input__description"
+      >
+        {{ description }}
+      </div>
   </div>
 </template>
 
